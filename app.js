@@ -19,7 +19,9 @@ var commentRoute     = require("./routes/comments"),
 //Seed Campground
 // seedDB();
 
-mongoose.connect("mongodb://localhost:27017/yelp_camp",{useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/yelp_camp",{useNewUrlParser: true});
+mongoose.connect("mongodb://wweswc:wwe123@ds157574.mlab.com:57574/yelpcamp",{useNewUrlParser: true});
+//mongodb://wweswc:wwe123@ds157574.mlab.com:57574/yelpcamp
 app.use(flash());
 app.use(bodyparser.urlencoded({extended:true}));
 app.set("view engine","ejs");
